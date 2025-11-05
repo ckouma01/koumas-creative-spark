@@ -4,7 +4,7 @@ export const Hero = () => {
   return (
     <section id="home" className="min-h-screen flex items-center justify-center animated-bg relative pt-20">
       <div className="container mx-auto px-4 text-center">
-        <div className="max-w-4xl mx-auto space-y-8">
+        <div className="max-w-4xl mx-auto space-y-8 relative z-10">
           <h1 className="text-5xl md:text-7xl font-bold leading-tight fade-in">
             Let's get your business{" "}
             <span className="glow-text">shining bright</span>{" "}

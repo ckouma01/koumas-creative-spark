@@ -1,6 +1,8 @@
 import { Star } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import pantelisImage from "@/assets/pantelis-miamiliotis.png";
+import petLoveStudioLogo from "@/assets/pet-love-studio-logo.png";
+import protoporiaUnicLogo from "@/assets/protoporia-unic-logo.png";
 
 const testimonials = [
   {
@@ -8,7 +10,7 @@ const testimonials = [
     role: "Φοιτητική Παράταξη",
     content: "Η ιστοσελίδα που μας δημιούργησαν ταιριάζει απόλυτα στις ανάγκες μας ως φοιτητική παράταξη. Πλέον μπορούμε να ενημερώνουμε τους συμφοιτητές μας άμεσα, να διαχειριζόμαστε τις εγγραφές μελών online και να επικοινωνούμε αποτελεσματικά. Εξαιρετική δουλειά!",
     rating: 5,
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop"
+    image: protoporiaUnicLogo
   },
   {
     name: "Pantelis Miamiliotis",
@@ -22,7 +24,7 @@ const testimonials = [
     role: "Pet Grooming & Pet Shop",
     content: "Η καλύτερη επένδυση για το pet shop μας! Πλέον οι πελάτες μας μπορούν να κλείνουν ραντεβού grooming online εύκολα, να βλέπουν τα προϊόντα μας και να ενημερώνονται για τις υπηρεσίες μας. Το site είναι όμορφο και πολύ λειτουργικό. Άψογη συνεργασία!",
     rating: 5,
-    image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop"
+    image: petLoveStudioLogo
   }
 ];
 

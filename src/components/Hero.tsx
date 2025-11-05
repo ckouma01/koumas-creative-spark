@@ -3,7 +3,7 @@ import { ArrowRight, Code, Globe, Monitor, Smartphone, Database, Server, Wifi, L
 export const Hero = () => {
   return (
     <section id="home" className="min-h-screen flex items-center justify-center animated-bg relative pt-20">
-      <div className="container mx-auto px-4 text-center relative z-10">
+      <div className="container mx-auto px-4 text-center">
         <div className="max-w-4xl mx-auto space-y-8">
           <h1 className="text-5xl md:text-7xl font-bold leading-tight fade-in">
             Let's get your business{" "}
@@ -31,7 +31,7 @@ export const Hero = () => {
         <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-accent/10 rounded-full blur-3xl animate-float" style={{ animationDelay: "3s" }} />
         
         {/* Scattered web-related icons */}
-        <div className="absolute inset-0 overflow-hidden pointer-events-none opacity-20 z-0">
+        <div className="absolute inset-0 overflow-hidden pointer-events-none opacity-20">
           <Code className="absolute top-[15%] left-[10%] w-12 h-12 text-primary animate-float" />
           <Globe className="absolute top-[25%] right-[15%] w-16 h-16 text-accent animate-float" style={{ animationDelay: "1s" }} />
           <Monitor className="absolute top-[60%] left-[8%] w-14 h-14 text-primary animate-float" style={{ animationDelay: "2s" }} />

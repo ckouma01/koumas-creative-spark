@@ -22,9 +22,10 @@ export const About = () => {
               but deliver real results.
             </p>
             <p className="text-muted-foreground leading-relaxed">
-              With years of experience in web development and design, we've helped countless 
-              businesses establish their digital footprint and grow their online reach. Our 
-              mission is to make professional web development accessible and effective.
+              Our mission is to help businesses shine in the digital world with designs that are clean, mobile-friendly, and unique to their identity. Whether you run a local shop, a creative business, or a service, we can build a website that truly represents you.
+            </p>
+            <p className="text-muted-foreground leading-relaxed">
+              With KoumasWeb, you don't just get a website — you get a partner in growing your online presence.
             </p>
           </div>
 

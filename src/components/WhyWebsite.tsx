@@ -1,4 +1,4 @@
-import { Eye, Shield, TrendingUp } from "lucide-react";
+import { Eye, Handshake, TrendingUp } from "lucide-react";
 
 const benefits = [
   {
@@ -7,7 +7,7 @@ const benefits = [
     description: "More and more people search online first. A website makes sure your business is visible 24/7.",
   },
   {
-    icon: Shield,
+    icon: Handshake,
     title: "Build Trust",
     description: "A professional website builds credibility and shows your customers that you're serious and reliable.",
   },

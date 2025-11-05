@@ -35,9 +35,12 @@ export const RecentWork = () => {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="glass rounded-2xl overflow-hidden hover-lift fade-in group"
+              className="glass rounded-2xl overflow-hidden hover-lift fade-in group relative"
             >
-              <div className="relative overflow-hidden h-[500px] bg-secondary">
+              <div className="absolute -top-5 right-4 bg-primary text-primary-foreground px-4 py-2 rounded-full font-semibold text-sm shadow-lg group-hover:scale-110 transition-transform z-10">
+                👆 Try Me!
+              </div>
+              <div className="relative overflow-hidden h-[500px] bg-secondary rounded-t-2xl">
                 <iframe
                   src={project.url}
                   title={project.title}
@@ -47,9 +50,6 @@ export const RecentWork = () => {
                   loading="lazy"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent opacity-60 group-hover:opacity-0 transition-opacity pointer-events-none" />
-                <div className="absolute -top-5 right-4 bg-primary text-primary-foreground px-4 py-2 rounded-full font-semibold text-sm shadow-lg group-hover:scale-110 transition-transform pointer-events-none z-10">
-                  👆 Try Me!
-                </div>
               </div>
               
               <div className="p-6 space-y-4">

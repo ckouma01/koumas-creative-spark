@@ -1,6 +1,6 @@
 import { Award } from "lucide-react";
 import protoporiaUnicLogo from "@/assets/protoporia-unic-logo.png";
-import vasilevousalogo from "@/assets/vasilevousa-logo.png";
+import pantelisMiamiliotis from "@/assets/pantelis-miamiliotis.png";
 import petLoveStudioLogo from "@/assets/pet-love-studio-logo.png";
 
 const clients = [
@@ -10,8 +10,8 @@ const clients = [
     instagram: "https://www.instagram.com/protoporiaunic/",
   },
   {
-    name: "Vasilevousa",
-    logo: vasilevousalogo,
+    name: "Pantelis Miamiliotis",
+    logo: pantelisMiamiliotis,
     instagram: "https://www.instagram.com/pantelis.19/",
   },
   {

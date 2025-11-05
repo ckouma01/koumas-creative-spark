@@ -1,5 +1,6 @@
 import { Star } from "lucide-react";
 import { Card } from "@/components/ui/card";
+import pantelisImage from "@/assets/pantelis-miamiliotis.png";
 
 const testimonials = [
   {
@@ -10,11 +11,11 @@ const testimonials = [
     image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop"
   },
   {
-    name: "Vasilevousa",
+    name: "Pantelis Miamiliotis",
     role: "Καλλιτέχνης Ψηφιδωτών",
     content: "Ως καλλιτέχνης ψηφιδωτών χρειαζόμουν μια ιστοσελίδα που θα αναδεικνύει την τέχνη μου με τον καλύτερο τρόπο. Το αποτέλεσμα ξεπέρασε κάθε προσδοκία! Η γκαλερί είναι υπέροχη και οι επισκέπτες μένουν εντυπωσιασμένοι. Ευχαριστώ πολύ!",
     rating: 5,
-    image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop"
+    image: pantelisImage
   },
   {
     name: "Pet Love Studio",

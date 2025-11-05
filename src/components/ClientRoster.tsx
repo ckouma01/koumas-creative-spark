@@ -7,14 +7,17 @@ const clients = [
   {
     name: "Protoporia UNIC",
     logo: protoporiaUnicLogo,
+    instagram: "https://www.instagram.com/protoporiaunic/",
   },
   {
     name: "Vasilevousa",
     logo: vasilevousalogo,
+    instagram: "https://www.instagram.com/pantelis.19/",
   },
   {
     name: "Pet Love Studio",
     logo: petLoveStudioLogo,
+    instagram: "https://www.instagram.com/pet_love_studio/",
   },
 ];
 
@@ -42,13 +45,18 @@ export const ClientRoster = () => {
               className="glass rounded-2xl p-8 hover-lift fade-in flex items-center justify-center"
             >
               <div className="text-center space-y-4">
-                <div className="w-32 h-32 mx-auto flex items-center justify-center">
+                <a 
+                  href={client.instagram}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block w-32 h-32 mx-auto transition-transform hover:scale-110"
+                >
                   <img 
                     src={client.logo} 
                     alt={client.name}
                     className="w-full h-full object-contain"
                   />
-                </div>
+                </a>
                 <p className="font-semibold">{client.name}</p>
               </div>
             </div>

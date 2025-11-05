@@ -94,7 +94,6 @@ All colors MUST be HSL.
   /* Shine animation on page load */
   .shine-text {
     position: relative;
-    overflow: hidden;
     display: inline-block;
   }
 
@@ -113,6 +112,7 @@ All colors MUST be HSL.
     animation: shine 1.5s ease-out 0.5s forwards;
     pointer-events: none;
     border-radius: 50%;
+    overflow: hidden;
   }
 
   @keyframes shine {

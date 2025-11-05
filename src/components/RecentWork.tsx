@@ -2,22 +2,22 @@ import { ExternalLink } from "lucide-react";
 
 const projects = [
   {
-    title: "Protoporia – UNIC",
-    description: "Heritage website for Vasilevousa Mosaic Art",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80",
-    tags: ["WordPress", "Custom Design", "Heritage"],
+    title: "Protoporia UNIC",
+    description: "Modern website for student political movement with news updates and member management",
+    url: "https://protoporiaunic.com",
+    tags: ["React", "Modern Design", "Student Organization"],
   },
   {
     title: "Vasilevousa",
-    description: "E-commerce platform for handmade mosaic art",
-    image: "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?w=800&q=80",
-    tags: ["E-commerce", "Gallery", "Art"],
+    description: "Elegant showcase for handmade mosaic art by Pantelis Miamiliotis",
+    url: "https://koumasweb.com/vasilevousa-main/",
+    tags: ["Gallery", "Art Portfolio", "Heritage"],
   },
   {
     title: "Pet Love Studio",
-    description: "Professional pet photography portfolio",
-    image: "https://images.unsplash.com/photo-1487014679447-9f8336841d58?w=800&q=80",
-    tags: ["Portfolio", "Photography", "Booking"],
+    description: "Professional pet grooming and shop with online booking system",
+    url: "https://petlove-studio.com",
+    tags: ["Booking System", "E-commerce", "Pet Services"],
   },
 ];
 
@@ -37,13 +37,15 @@ export const RecentWork = () => {
               key={index}
               className="glass rounded-2xl overflow-hidden hover-lift fade-in group"
             >
-              <div className="relative overflow-hidden aspect-video">
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+              <div className="relative overflow-hidden aspect-video bg-secondary">
+                <iframe
+                  src={project.url}
+                  title={project.title}
+                  className="w-full h-full border-0 pointer-events-none group-hover:pointer-events-auto transition-all"
+                  sandbox="allow-scripts allow-same-origin"
+                  loading="lazy"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-background to-transparent opacity-60" />
+                <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent opacity-60 group-hover:opacity-0 transition-opacity pointer-events-none" />
               </div>
               
               <div className="p-6 space-y-4">
@@ -62,10 +64,12 @@ export const RecentWork = () => {
                 </div>
 
                 <a
-                  href="#projects"
+                  href={project.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 text-primary hover:gap-3 transition-all"
                 >
-                  View Project <ExternalLink className="w-4 h-4" />
+                  Visit Website <ExternalLink className="w-4 h-4" />
                 </a>
               </div>
             </div>

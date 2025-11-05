@@ -10,7 +10,7 @@ export const Navigation = () => {
           </a>
           <div className="hidden md:flex items-center gap-2">
             <a
-              href="https://instagram.com"
+              href="https://www.instagram.com/koumasweb/"
               target="_blank"
               rel="noopener noreferrer"
               className="p-2 hover:text-primary transition-colors"
@@ -18,7 +18,7 @@ export const Navigation = () => {
               <Instagram className="w-5 h-5" />
             </a>
             <a
-              href="https://facebook.com"
+              href="https://www.facebook.com/profile.php?id=61580255278305"
               target="_blank"
               rel="noopener noreferrer"
               className="p-2 hover:text-primary transition-colors"

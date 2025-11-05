@@ -24,6 +24,15 @@ export const Footer = () => {
               <a href="#about" className="block hover:text-primary transition-colors">
                 About
               </a>
+              <a href="#testimonials" className="block hover:text-primary transition-colors">
+                Testimonials
+              </a>
+              <a href="#why-website" className="block hover:text-primary transition-colors">
+                Why You Need a Website
+              </a>
+              <a href="#roster" className="block hover:text-primary transition-colors">
+                Our Roster
+              </a>
             </div>
           </div>
           
@@ -31,7 +40,7 @@ export const Footer = () => {
             <h4 className="text-lg font-semibold mb-4">Connect</h4>
             <div className="flex gap-4">
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/koumasweb/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2 glass rounded-lg hover:text-primary transition-colors"
@@ -39,7 +48,7 @@ export const Footer = () => {
                 <Instagram className="w-5 h-5" />
               </a>
               <a
-                href="https://facebook.com"
+                href="https://www.facebook.com/profile.php?id=61580255278305"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2 glass rounded-lg hover:text-primary transition-colors"
@@ -47,7 +56,7 @@ export const Footer = () => {
                 <Facebook className="w-5 h-5" />
               </a>
               <a
-                href="mailto:contact@koumasweb.com"
+                href="mailto:ckouma01@ucy.ac.cy"
                 className="p-2 glass rounded-lg hover:text-primary transition-colors"
               >
                 <Mail className="w-5 h-5" />

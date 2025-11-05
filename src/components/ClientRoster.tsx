@@ -54,7 +54,7 @@ export const ClientRoster = () => {
                   <img 
                     src={client.logo} 
                     alt={client.name}
-                    className="w-full h-full object-contain"
+                    className="w-full h-full object-contain rounded-full"
                   />
                 </a>
                 <p className="font-semibold">{client.name}</p>

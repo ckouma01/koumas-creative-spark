@@ -10,7 +10,7 @@ const projects = [
   {
     title: "Mosaic-Art Gallery",
     description: "Elegant showcase for handmade mosaic art by Pantelis Miamiliotis",
-    url: "https://koumasweb.com/vasilevousa-main/",
+    url: "https://ckouma01.github.io/koumasweb/vasilevousa-main/",
     tags: ["Gallery", "Art Portfolio", "Heritage"],
   },
   {

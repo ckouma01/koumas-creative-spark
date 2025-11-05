@@ -31,17 +31,18 @@ export const RecentWork = () => {
           </h2>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
           {projects.map((project, index) => (
             <div
               key={index}
               className="glass rounded-2xl overflow-hidden hover-lift fade-in group"
             >
-              <div className="relative overflow-hidden aspect-video bg-secondary">
+              <div className="relative overflow-hidden h-[500px] bg-secondary">
                 <iframe
                   src={project.url}
                   title={project.title}
-                  className="w-full h-full border-0 pointer-events-none group-hover:pointer-events-auto transition-all"
+                  className="w-full h-full border-0 pointer-events-none group-hover:pointer-events-auto transition-all scale-75 origin-top-left"
+                  style={{ width: '133.33%', height: '133.33%' }}
                   sandbox="allow-scripts allow-same-origin"
                   loading="lazy"
                 />

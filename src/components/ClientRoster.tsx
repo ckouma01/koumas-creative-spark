@@ -1,4 +1,4 @@
-import { Shirt } from "lucide-react";
+import { Award } from "lucide-react";
 import protoporiaUnicLogo from "@/assets/protoporia-unic-logo.png";
 import vasilevousalogo from "@/assets/vasilevousa-logo.png";
 import petLoveStudioLogo from "@/assets/pet-love-studio-logo.png";
@@ -27,11 +27,11 @@ export const ClientRoster = () => {
       <div className="container mx-auto">
         <div className="text-center mb-16">
           <div className="flex items-center justify-center gap-3 mb-4">
-            <Shirt className="w-10 h-10 text-primary" />
+            <Award className="w-10 h-10 text-primary" />
             <h2 className="text-4xl md:text-5xl font-bold fade-in">
               Our Roster
             </h2>
-            <Shirt className="w-10 h-10 text-primary" />
+            <Award className="w-10 h-10 text-primary" />
           </div>
           <p className="text-xl text-muted-foreground fade-in">
             We sincerely thank our amazing clients for trusting us

@@ -3,46 +3,25 @@ import { Card } from "@/components/ui/card";
 
 const testimonials = [
   {
-    name: "Sarah Johnson",
-    role: "Small Business Owner",
-    content: "The website they created for my bakery exceeded all expectations. Sales increased by 40% in the first month!",
-    rating: 5,
-    image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop"
-  },
-  {
-    name: "Michael Chen",
-    role: "Restaurant Manager",
-    content: "Professional, fast, and exactly what we needed. Our online orders have never been easier to manage.",
+    name: "Protoporia UNIC",
+    role: "Κατάστημα Ρούχων",
+    content: "Εξαιρετική δουλειά! Η ιστοσελίδα που μας δημιούργησαν είναι ακριβώς αυτό που χρειαζόμασταν. Οι πελάτες μας την λατρεύουν και οι παραγγελίες online έχουν αυξηθεί σημαντικά. Επαγγελματισμός και ποιότητα σε κάθε λεπτομέρεια!",
     rating: 5,
     image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop"
   },
   {
-    name: "Emily Rodriguez",
-    role: "Fitness Coach",
-    content: "They transformed my vision into reality. My clients love the new booking system and the modern design.",
+    name: "Vasilevousa",
+    role: "Επιχείρηση",
+    content: "Πολύ ευχαριστημένοι με το αποτέλεσμα! Η ιστοσελίδα είναι γρήγορη, όμορφη και λειτουργική. Το team ήταν πάντα διαθέσιμο για τυχόν απορίες και μας παρέδωσε ακριβώς αυτό που φανταστήκαμε. Σίγουρα θα τους προτείνουμε!",
+    rating: 5,
+    image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop"
+  },
+  {
+    name: "Pet Love Studio",
+    role: "Pet Grooming & Spa",
+    content: "Η καλύτερη επένδυση για την επιχείρησή μας! Πλέον οι πελάτες μας μπορούν να κλείσουν ραντεβού online εύκολα και το site είναι απλά υπέροχο. Ευχαριστούμε για την υπέροχη συνεργασία και την άψογη εξυπηρέτηση!",
     rating: 5,
     image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop"
-  },
-  {
-    name: "David Thompson",
-    role: "Real Estate Agent",
-    content: "Outstanding work! The property showcase feature has helped me close deals faster than ever before.",
-    rating: 5,
-    image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&h=100&fit=crop"
-  },
-  {
-    name: "Lisa Park",
-    role: "Boutique Owner",
-    content: "Beautiful design and seamless functionality. My customers find it so easy to shop online now.",
-    rating: 5,
-    image: "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=100&h=100&fit=crop"
-  },
-  {
-    name: "James Wilson",
-    role: "Consultant",
-    content: "The best investment I made for my business. Professional, responsive, and truly understands client needs.",
-    rating: 5,
-    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop"
   }
 ];
 

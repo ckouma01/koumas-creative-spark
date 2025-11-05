@@ -7,7 +7,7 @@ export const Hero = () => {
         <div className="max-w-4xl mx-auto space-y-8">
           <h1 className="text-5xl md:text-7xl font-bold leading-tight fade-in">
             Let's get your business{" "}
-            <span className="gradient-text">shining bright</span>{" "}
+            <span className="glow-text">shining bright</span>{" "}
             in the online world
           </h1>
           

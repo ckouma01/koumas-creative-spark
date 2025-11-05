@@ -79,18 +79,37 @@ All colors MUST be HSL.
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    animation: textGlow 2s ease-in-out infinite;
   }
 
-  @keyframes textGlow {
+  /* Wavy glowing text */
+  .glow-text {
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: wavyGlow 3s ease-in-out infinite;
+    position: relative;
+  }
+
+  @keyframes wavyGlow {
     0%, 100% {
-      filter: drop-shadow(0 0 10px hsl(var(--primary) / 0.5)) 
-              drop-shadow(0 0 20px hsl(var(--primary) / 0.3));
+      filter: drop-shadow(0 0 8px hsl(var(--primary) / 0.4)) 
+              drop-shadow(0 0 16px hsl(var(--primary) / 0.2));
+    }
+    25% {
+      filter: drop-shadow(-3px 0 12px hsl(var(--primary) / 0.6)) 
+              drop-shadow(-6px 0 24px hsl(var(--primary) / 0.4))
+              drop-shadow(-9px 0 36px hsl(var(--accent) / 0.3));
     }
     50% {
-      filter: drop-shadow(0 0 20px hsl(var(--primary) / 0.8)) 
-              drop-shadow(0 0 40px hsl(var(--primary) / 0.6)) 
-              drop-shadow(0 0 60px hsl(var(--accent) / 0.4));
+      filter: drop-shadow(0 0 16px hsl(var(--primary) / 0.8)) 
+              drop-shadow(0 0 32px hsl(var(--primary) / 0.6))
+              drop-shadow(0 0 48px hsl(var(--accent) / 0.4));
+    }
+    75% {
+      filter: drop-shadow(3px 0 12px hsl(var(--primary) / 0.6)) 
+              drop-shadow(6px 0 24px hsl(var(--primary) / 0.4))
+              drop-shadow(9px 0 36px hsl(var(--accent) / 0.3));
     }
   }
 

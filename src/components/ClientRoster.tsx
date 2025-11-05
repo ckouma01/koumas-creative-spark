@@ -55,7 +55,7 @@ export const ClientRoster = () => {
                     src={client.logo} 
                     alt={client.name}
                     className="w-full h-full rounded-full"
-                    style={client.name === "Pantelis Miamiliotis" ? { objectFit: "cover", objectPosition: "center 30%", transform: "scale(1.3)" } : { objectFit: "contain" }}
+                    style={client.name === "Pantelis Miamiliotis" ? { objectFit: "cover", objectPosition: "center 30%" } : { objectFit: "contain" }}
                   />
                 </a>
                 <p className="font-semibold">{client.name}</p>

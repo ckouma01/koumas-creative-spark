@@ -47,6 +47,9 @@ export const RecentWork = () => {
                   loading="lazy"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent opacity-60 group-hover:opacity-0 transition-opacity pointer-events-none" />
+                <div className="absolute top-4 right-4 bg-primary text-primary-foreground px-4 py-2 rounded-full font-semibold text-sm shadow-lg group-hover:scale-110 transition-transform pointer-events-none">
+                  👆 Try Me!
+                </div>
               </div>
               
               <div className="p-6 space-y-4">

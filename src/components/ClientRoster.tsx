@@ -1,3 +1,5 @@
+import { Shirt } from "lucide-react";
+
 const clients = [
   {
     name: "Protoporia UNIC",
@@ -18,9 +20,13 @@ export const ClientRoster = () => {
     <section className="py-24 px-4">
       <div className="container mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 fade-in">
-            Our Roster
-          </h2>
+          <div className="flex items-center justify-center gap-3 mb-4">
+            <Shirt className="w-10 h-10 text-primary" />
+            <h2 className="text-4xl md:text-5xl font-bold fade-in">
+              Our Roster
+            </h2>
+            <Shirt className="w-10 h-10 text-primary" />
+          </div>
           <p className="text-xl text-muted-foreground fade-in">
             We sincerely thank our amazing clients for trusting us
           </p>

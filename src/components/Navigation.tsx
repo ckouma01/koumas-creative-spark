@@ -38,6 +38,15 @@ export const Navigation = () => {
           <a href="#about" className="hover:text-primary transition-colors">
             About
           </a>
+          <a href="#testimonials" className="hover:text-primary transition-colors">
+            Testimonials
+          </a>
+          <a href="#why-website" className="hover:text-primary transition-colors">
+            Why You Need a Website
+          </a>
+          <a href="#roster" className="hover:text-primary transition-colors">
+            Our Roster
+          </a>
           <a
             href="#contact"
             className="px-6 py-2 bg-primary text-primary-foreground rounded-lg hover:animate-pulse-glow transition-all"

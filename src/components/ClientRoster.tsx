@@ -1,17 +1,20 @@
 import { Shirt } from "lucide-react";
+import protoporiaUnicLogo from "@/assets/protoporia-unic-logo.png";
+import vasilevousalogo from "@/assets/vasilevousa-logo.png";
+import petLoveStudioLogo from "@/assets/pet-love-studio-logo.png";
 
 const clients = [
   {
     name: "Protoporia UNIC",
-    logo: "https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=400&q=80",
+    logo: protoporiaUnicLogo,
   },
   {
     name: "Vasilevousa",
-    logo: "https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=400&q=80",
+    logo: vasilevousalogo,
   },
   {
     name: "Pet Love Studio",
-    logo: "https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=400&q=80",
+    logo: petLoveStudioLogo,
   },
 ];
 
@@ -39,10 +42,12 @@ export const ClientRoster = () => {
               className="glass rounded-2xl p-8 hover-lift fade-in flex items-center justify-center"
             >
               <div className="text-center space-y-4">
-                <div className="w-24 h-24 mx-auto bg-gradient-to-br from-primary/20 to-accent/20 rounded-full flex items-center justify-center">
-                  <span className="text-2xl font-bold gradient-text">
-                    {client.name.charAt(0)}
-                  </span>
+                <div className="w-32 h-32 mx-auto flex items-center justify-center">
+                  <img 
+                    src={client.logo} 
+                    alt={client.name}
+                    className="w-full h-full object-contain"
+                  />
                 </div>
                 <p className="font-semibold">{client.name}</p>
               </div>

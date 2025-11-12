@@ -11,7 +11,7 @@ export const Footer = () => {
               Professional website development services for businesses that want to shine online.
             </p>
           </div>
-          
+
           <div>
             <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
             <div className="space-y-2">
@@ -35,7 +35,7 @@ export const Footer = () => {
               </a>
             </div>
           </div>
-          
+
           <div>
             <h4 className="text-lg font-semibold mb-4">Connect</h4>
             <div className="flex gap-4">
@@ -55,18 +55,15 @@ export const Footer = () => {
               >
                 <Facebook className="w-5 h-5" />
               </a>
-              <a
-                href="mailto:ckouma01@ucy.ac.cy"
-                className="p-2 glass rounded-lg hover:text-primary transition-colors"
-              >
+              <a href="mailto:ckouma01@ucy.ac.cy" className="p-2 glass rounded-lg hover:text-primary transition-colors">
                 <Mail className="w-5 h-5" />
               </a>
             </div>
           </div>
         </div>
-        
+
         <div className="pt-8 border-t border-border text-center text-muted-foreground">
-          <p>&copy; {new Date().getFullYear()} Koumas Web. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} KoumasWeb. All rights reserved.</p>
         </div>
       </div>
     </footer>

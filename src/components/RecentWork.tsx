@@ -2,24 +2,6 @@ import { ExternalLink } from "lucide-react";
 
 const projects = [
   {
-    title: "Protoporia UNIC",
-    description: "Modern website for student political movement with news updates and member management",
-    url: "https://protoporiaunic.com",
-    tags: ["React", "Modern Design", "Student Organization"],
-  },
-  {
-    title: "Mosaic-Art Gallery",
-    description: "Elegant showcase for handmade mosaic art by Pantelis Miamiliotis",
-    url: "https://ckouma01.github.io/koumasweb/vasilevousa-main/",
-    tags: ["Gallery", "Art Portfolio", "Heritage"],
-  },
-  {
-    title: "Pet Love Studio",
-    description: "Professional pet grooming and shop with online booking system",
-    url: "https://petlove-studio.com",
-    tags: ["Booking System", "E-commerce", "Pet Services"],
-  },
-  {
     title: "Cheers Barbershop",
     description: "Modern barbershop website with online booking and service showcase",
     url: "https://cheers-barbershop.com",
@@ -30,6 +12,24 @@ const projects = [
     description: "Professional laser hair removal clinic with elegant design",
     url: "https://cplaserhair-removal.com",
     tags: ["Healthcare", "Beauty Services", "Professional"],
+  },
+  {
+    title: "Protoporia UNIC",
+    description: "Modern website for student political movement with news updates and member management",
+    url: "https://protoporiaunic.com",
+    tags: ["React", "Modern Design", "Student Organization"],
+  },
+  {
+    title: "Pet Love Studio",
+    description: "Professional pet grooming and shop with online booking system",
+    url: "https://petlove-studio.com",
+    tags: ["Booking System", "E-commerce", "Pet Services"],
+  },
+  {
+    title: "Mosaic-Art Gallery",
+    description: "Elegant showcase for handmade mosaic art by Pantelis Miamiliotis",
+    url: "https://ckouma01.github.io/koumasweb/vasilevousa-main/",
+    tags: ["Gallery", "Art Portfolio", "Heritage"],
   },
 ];
 

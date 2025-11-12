@@ -3,6 +3,8 @@ import { Card } from "@/components/ui/card";
 import pantelisImage from "@/assets/pantelis-miamiliotis.png";
 import petLoveStudioLogo from "@/assets/pet-love-studio-logo.png";
 import protoporiaUnicLogo from "@/assets/protoporia-unic-logo.png";
+import cheersBarbershopLogo from "@/assets/cheers-barbershop-logo.png";
+import cpLaserLogo from "@/assets/cp-laser-logo.png";
 
 const testimonials = [
   {
@@ -25,6 +27,20 @@ const testimonials = [
     content: "Η καλύτερη επένδυση για το pet shop μας! Πλέον οι πελάτες μας μπορούν να κλείνουν ραντεβού grooming online εύκολα, να βλέπουν τα προϊόντα μας και να ενημερώνονται για τις υπηρεσίες μας. Το site είναι όμορφο και πολύ λειτουργικό. Άψογη συνεργασία!",
     rating: 5,
     image: petLoveStudioLogo
+  },
+  {
+    name: "Cheers Barbershop",
+    role: "Barber Shop",
+    content: "Από τότε που αποκτήσαμε την ιστοσελίδα μας, το κομμωτήριό μας έχει αυξήσει σημαντικά την πελατεία του. Το σύστημα κρατήσεων λειτουργεί άψογα και οι πελάτες μας βρίσκουν εύκολα τις υπηρεσίες και τις τιμές μας. Εξαιρετική συνεργασία και αποτέλεσμα!",
+    rating: 5,
+    image: cheersBarbershopLogo
+  },
+  {
+    name: "CP Laser Hair Removal",
+    role: "Laser Hair Removal Clinic",
+    content: "Το κέντρο αποτρίχωσης μας χρειαζόταν μια επαγγελματική παρουσία στο διαδίκτυο. Το αποτέλεσμα είναι υπέροχο - το site είναι κομψό, επαγγελματικό και δείχνει ακριβώς αυτό που θέλαμε. Οι νέες πελάτισσες μας το σχολιάζουν θετικά συνέχεια!",
+    rating: 5,
+    image: cpLaserLogo
   }
 ];
 

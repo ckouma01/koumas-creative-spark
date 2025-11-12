@@ -2,6 +2,8 @@ import { Award } from "lucide-react";
 import protoporiaUnicLogo from "@/assets/protoporia-unic-logo.png";
 import pantelisMiamiliotis from "@/assets/pantelis-miamiliotis.png";
 import petLoveStudioLogo from "@/assets/pet-love-studio-logo.png";
+import cheersBarbershopLogo from "@/assets/cheers-barbershop-logo.png";
+import cpLaserLogo from "@/assets/cp-laser-logo.png";
 
 const clients = [
   {
@@ -18,6 +20,16 @@ const clients = [
     name: "Pet Love Studio",
     logo: petLoveStudioLogo,
     instagram: "https://www.instagram.com/pet_love_studio/",
+  },
+  {
+    name: "Cheers Barbershop",
+    logo: cheersBarbershopLogo,
+    instagram: "https://www.instagram.com/cheers_barbershop/",
+  },
+  {
+    name: "CP Laser Hair Removal",
+    logo: cpLaserLogo,
+    instagram: "https://www.instagram.com/cplaser/",
   },
 ];
 
@@ -38,7 +50,7 @@ export const ClientRoster = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+        <div className="grid md:grid-cols-3 lg:grid-cols-5 gap-8 max-w-6xl mx-auto">
           {clients.map((client, index) => (
             <div
               key={index}

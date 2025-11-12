@@ -19,6 +19,18 @@ const projects = [
     url: "https://petlove-studio.com",
     tags: ["Booking System", "E-commerce", "Pet Services"],
   },
+  {
+    title: "Cheers Barbershop",
+    description: "Modern barbershop website with online booking and service showcase",
+    url: "https://cheers-barbershop.com",
+    tags: ["Booking System", "Barbershop", "Modern Design"],
+  },
+  {
+    title: "CP Laser Hair Removal",
+    description: "Professional laser hair removal clinic with elegant design",
+    url: "https://cplaserhair-removal.com",
+    tags: ["Healthcare", "Beauty Services", "Professional"],
+  },
 ];
 
 export const RecentWork = () => {

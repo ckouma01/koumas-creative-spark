@@ -5,6 +5,7 @@ import petLoveStudioLogo from "@/assets/pet-love-studio-logo.png";
 import protoporiaUnicLogo from "@/assets/protoporia-unic-logo.png";
 import cheersBarbershopLogo from "@/assets/cheers-barbershop-logo.png";
 import cpLaserLogo from "@/assets/cp-laser-logo.png";
+import { useScrollAnimation } from "@/hooks/use-scroll-animation";
 
 const testimonials = [
   {
@@ -45,10 +46,12 @@ const testimonials = [
 ];
 
 export const Testimonials = () => {
+  const { ref, isVisible } = useScrollAnimation();
+  
   return (
-    <section id="testimonials" className="py-20 px-4 bg-secondary/30">
+    <section id="testimonials" className="py-20 px-4 bg-secondary/30" ref={ref}>
       <div className="container mx-auto">
-        <div className="text-center mb-16 fade-in">
+        <div className={`text-center mb-16 transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
             What Our <span className="glow-text">Clients Say</span>
           </h2>
@@ -61,8 +64,8 @@ export const Testimonials = () => {
           {testimonials.map((testimonial, index) => (
             <Card
               key={index}
-              className="p-6 glass hover-lift fade-in"
-              style={{ animationDelay: `${index * 0.1}s` }}
+              className={`p-6 glass hover-lift transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
+              style={{ transitionDelay: `${index * 0.1}s` }}
             >
               <div className="flex items-center gap-4 mb-4">
                 <img

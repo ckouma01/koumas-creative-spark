@@ -1,4 +1,5 @@
 import { Eye, Handshake, TrendingUp } from "lucide-react";
+import { useScrollAnimation } from "@/hooks/use-scroll-animation";
 
 const benefits = [
   {
@@ -19,11 +20,13 @@ const benefits = [
 ];
 
 export const WhyWebsite = () => {
+  const { ref, isVisible } = useScrollAnimation();
+  
   return (
-    <section id="why-website" className="py-24 px-4 bg-secondary/20">
+    <section id="why-website" className="py-24 px-4 bg-secondary/20" ref={ref}>
       <div className="container mx-auto">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 fade-in">
+        <div className={`text-center mb-16 transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+          <h2 className="text-4xl md:text-5xl font-bold mb-4">
             Why Your Business Needs a Website
           </h2>
         </div>
@@ -32,7 +35,8 @@ export const WhyWebsite = () => {
           {benefits.map((benefit, index) => (
             <div
               key={index}
-              className="glass rounded-2xl p-8 text-center hover-lift fade-in space-y-4"
+              className={`glass rounded-2xl p-8 text-center hover-lift space-y-4 transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
+              style={{ transitionDelay: `${index * 0.15}s` }}
             >
               <div className="w-16 h-16 mx-auto bg-gradient-to-br from-primary to-accent rounded-2xl flex items-center justify-center animate-pulse-glow">
                 <benefit.icon className="w-8 h-8 text-primary-foreground" />

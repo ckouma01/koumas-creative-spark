@@ -1,4 +1,5 @@
 import { ExternalLink } from "lucide-react";
+import { useScrollAnimation } from "@/hooks/use-scroll-animation";
 
 const projects = [
   {
@@ -34,11 +35,13 @@ const projects = [
 ];
 
 export const RecentWork = () => {
+  const { ref, isVisible } = useScrollAnimation();
+  
   return (
-    <section id="projects" className="py-24 px-4">
+    <section id="projects" className="py-24 px-4" ref={ref}>
       <div className="container mx-auto">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 fade-in">
+        <div className={`text-center mb-16 transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+          <h2 className="text-4xl md:text-5xl font-bold mb-4">
             Recent Work
           </h2>
         </div>
@@ -47,7 +50,8 @@ export const RecentWork = () => {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="glass rounded-2xl hover-lift fade-in group relative overflow-visible"
+              className={`glass rounded-2xl hover-lift group relative overflow-visible transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
+              style={{ transitionDelay: `${index * 0.15}s` }}
             >
               <div className="relative overflow-visible h-[500px] bg-secondary rounded-t-2xl">
                 <iframe

@@ -4,6 +4,7 @@ import pantelisMiamiliotis from "@/assets/pantelis-miamiliotis.png";
 import petLoveStudioLogo from "@/assets/pet-love-studio-logo.png";
 import cheersBarbershopLogo from "@/assets/cheers-barbershop-logo.png";
 import cpLaserLogo from "@/assets/cp-laser-logo.png";
+import { useScrollAnimation } from "@/hooks/use-scroll-animation";
 
 const clients = [
   {
@@ -29,23 +30,25 @@ const clients = [
   {
     name: "CP Laser Hair Removal",
     logo: cpLaserLogo,
-    instagram: "https://www.instagram.com/cplaser/",
+    instagram: "https://www.instagram.com/laser.hair.removal_/",
   },
 ];
 
 export const ClientRoster = () => {
+  const { ref, isVisible } = useScrollAnimation();
+  
   return (
-    <section id="roster" className="py-24 px-4">
+    <section id="roster" className="py-24 px-4" ref={ref}>
       <div className="container mx-auto">
-        <div className="text-center mb-16">
+        <div className={`text-center mb-16 transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
           <div className="flex items-center justify-center gap-3 mb-4">
             <Award className="w-10 h-10 text-primary" />
-            <h2 className="text-4xl md:text-5xl font-bold fade-in">
+            <h2 className="text-4xl md:text-5xl font-bold">
               Our Roster
             </h2>
             <Award className="w-10 h-10 text-primary" />
           </div>
-          <p className="text-xl text-muted-foreground fade-in">
+          <p className="text-xl text-muted-foreground">
             We sincerely thank our amazing clients for trusting us
           </p>
         </div>
@@ -54,7 +57,8 @@ export const ClientRoster = () => {
           {clients.map((client, index) => (
             <div
               key={index}
-              className="glass rounded-2xl p-8 hover-lift fade-in flex items-center justify-center"
+              className={`glass rounded-2xl p-8 hover-lift flex items-center justify-center transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
+              style={{ transitionDelay: `${index * 0.1}s` }}
             >
               <div className="text-center space-y-4">
                 <a 

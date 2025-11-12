@@ -6,7 +6,7 @@ export const Footer = () => {
       <div className="container mx-auto">
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           <div>
-            <h3 className="text-2xl font-bold gradient-text mb-4">KOUMAS WEB</h3>
+            <h3 className="text-2xl font-bold gradient-text mb-4">KoumasWeb</h3>
             <p className="text-muted-foreground">
               Professional website development services for businesses that want to shine online.
             </p>

@@ -21,12 +21,6 @@ const projects = [
     tags: ["React", "Modern Design", "Student Organization"],
   },
   {
-    title: "Pet Love Studio",
-    description: "Professional pet grooming and shop with online booking system",
-    url: "https://petlove-studio.com",
-    tags: ["Booking System", "E-commerce", "Pet Services"],
-  },
-  {
     title: "Mosaic-Art Gallery",
     description: "Elegant showcase for handmade mosaic art by Pantelis Miamiliotis",
     url: "https://ckouma01.github.io/koumasweb/vasilevousa-main/",

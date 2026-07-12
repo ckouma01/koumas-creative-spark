@@ -11,8 +11,7 @@ const Wedding = () => {
     <div
       className="min-h-screen w-full flex items-center justify-center p-6"
       style={{
-        background:
-          "radial-gradient(ellipse at top, #faf6ee 0%, #f2ebdc 60%, #ece2cd 100%)",
+        backgroundColor: "#ffffff",
         backgroundImage:
           "url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'><g fill='%23b8935a' fill-opacity='0.09'><path d='M20 30c0-4 3-7 7-7 3 0 5 2 6 4 1-2 3-4 6-4 4 0 7 3 7 7 0 7-13 14-13 14S20 37 20 30z'/><path d='M56 58c0-2.5 2-4.5 4.5-4.5 1.8 0 3 1.2 3.7 2.5.7-1.3 1.9-2.5 3.7-2.5 2.5 0 4.5 2 4.5 4.5 0 4.5-8.2 9-8.2 9S56 62.5 56 58z'/><path d='M8 62c0-2 1.6-3.6 3.6-3.6 1.5 0 2.5 1 3 2 .5-1 1.5-2 3-2 2 0 3.6 1.6 3.6 3.6 0 3.6-6.6 7.2-6.6 7.2S8 65.6 8 62z'/></g></svg>\")",
         backgroundRepeat: "repeat",

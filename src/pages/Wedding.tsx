@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { Heart, Camera, Upload, X } from "lucide-react";
 
-// TODO: Replace with your OneDrive "Request Files" link
-const UPLOAD_URL = "https://1drv.ms/REPLACE_WITH_YOUR_REQUEST_FILES_LINK";
+const UPLOAD_URL =
+  "https://ucy-my.sharepoint.com/:f:/g/personal/ckouma01_ucy_ac_cy/IgDL4dty42UmSp8J0QF-sKFUAedS-Hk-Shy6Dq3EiXfA0aA";
 
 const Wedding = () => {
   const [showModal, setShowModal] = useState(false);
@@ -17,7 +17,7 @@ const Wedding = () => {
       }}
     >
       <link
-        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Great+Vibes&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500;1,600&family=Playfair+Display:ital,wght@1,500;1,600;1,700&display=swap"
         rel="stylesheet"
       />
 
@@ -29,6 +29,9 @@ const Wedding = () => {
           border: "1px solid #c9a86a",
           boxShadow:
             "0 30px 80px -30px rgba(148, 117, 60, 0.35), 0 8px 24px -12px rgba(148,117,60,0.2)",
+          backgroundImage:
+            "url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'><g fill='%23b8935a' fill-opacity='0.09'><path d='M20 30c0-4 3-7 7-7 3 0 5 2 6 4 1-2 3-4 6-4 4 0 7 3 7 7 0 7-13 14-13 14S20 37 20 30z'/><path d='M56 58c0-2.5 2-4.5 4.5-4.5 1.8 0 3 1.2 3.7 2.5.7-1.3 1.9-2.5 3.7-2.5 2.5 0 4.5 2 4.5 4.5 0 4.5-8.2 9-8.2 9S56 62.5 56 58z'/><path d='M8 62c0-2 1.6-3.6 3.6-3.6 1.5 0 2.5 1 3 2 .5-1 1.5-2 3-2 2 0 3.6 1.6 3.6 3.6 0 3.6-6.6 7.2-6.6 7.2S8 65.6 8 62z'/></g></svg>\")",
+          backgroundRepeat: "repeat",
         }}
       >
         {/* Corner ornaments */}
@@ -51,15 +54,20 @@ const Wedding = () => {
 
         {/* Names */}
         <h1
-          className="text-6xl md:text-7xl leading-tight"
+          className="text-5xl md:text-6xl leading-tight italic"
           style={{
-            fontFamily: "'Great Vibes', cursive",
+            fontFamily: "'Playfair Display', 'Cormorant Garamond', serif",
             color: "#b8935a",
+            fontWeight: 600,
+            letterSpacing: "0.02em",
           }}
         >
           Λούκας
           <br />
-          <span className="text-4xl md:text-5xl" style={{ color: "#a8834a" }}>
+          <span
+            className="text-3xl md:text-4xl"
+            style={{ color: "#a8834a", fontWeight: 500 }}
+          >
             &amp;
           </span>
           <br />
@@ -149,7 +157,9 @@ const Wedding = () => {
             <h2
               className="text-3xl mb-4"
               style={{
-                fontFamily: "'Great Vibes', cursive",
+                fontFamily: "'Playfair Display', serif",
+                fontStyle: "italic",
+                fontWeight: 600,
                 color: "#b8935a",
               }}
             >

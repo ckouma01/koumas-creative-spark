@@ -7,6 +7,16 @@ const UPLOAD_URL =
 const Wedding = () => {
   const [showModal, setShowModal] = useState(false);
 
+  useEffect(() => {
+    const meta = document.createElement("meta");
+    meta.name = "robots";
+    meta.content = "noindex, nofollow, noarchive";
+    document.head.appendChild(meta);
+    return () => {
+      document.head.removeChild(meta);
+    };
+  }, []);
+
   return (
     <div
       className="min-h-screen w-full flex items-center justify-center p-6"

@@ -1,13 +1,40 @@
 import { useState, useEffect } from "react";
 import { Heart, Camera, Upload, X } from "lucide-react";
+import NotFound from "./NotFound";
 
 const UPLOAD_URL =
   "https://ucy-my.sharepoint.com/:f:/g/personal/ckouma01_ucy_ac_cy/IgDL4dty42UmSp8J0QF-sKFUAedS-Hk-Shy6Dq3EiXfA0aA";
 
+// Secret token required to access this page. The QR code must encode
+// koumasweb.com/wedding?k=<ACCESS_TOKEN>. Change here to invalidate old QRs.
+const ACCESS_TOKEN = "louka-maria-2610";
+const STORAGE_KEY = "wedding-access-granted";
+
 const Wedding = () => {
   const [showModal, setShowModal] = useState(false);
+  const [authorized, setAuthorized] = useState<boolean | null>(null);
 
   useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const token = params.get("k");
+    const remembered =
+      typeof window !== "undefined" &&
+      window.localStorage.getItem(STORAGE_KEY) === ACCESS_TOKEN;
+
+    if (token === ACCESS_TOKEN) {
+      window.localStorage.setItem(STORAGE_KEY, ACCESS_TOKEN);
+      // Clean the token out of the URL so it isn't shared accidentally.
+      window.history.replaceState(null, "", window.location.pathname);
+      setAuthorized(true);
+    } else if (remembered) {
+      setAuthorized(true);
+    } else {
+      setAuthorized(false);
+    }
+  }, []);
+
+  useEffect(() => {
+    if (!authorized) return;
     const meta = document.createElement("meta");
     meta.name = "robots";
     meta.content = "noindex, nofollow, noarchive";
@@ -15,7 +42,10 @@ const Wedding = () => {
     return () => {
       document.head.removeChild(meta);
     };
-  }, []);
+  }, [authorized]);
+
+  if (authorized === null) return null;
+  if (!authorized) return <NotFound />;
 
   return (
     <div

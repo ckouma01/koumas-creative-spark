@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Heart, Camera, Upload, X } from "lucide-react";
 
 const UPLOAD_URL =
@@ -6,6 +6,16 @@ const UPLOAD_URL =
 
 const Wedding = () => {
   const [showModal, setShowModal] = useState(false);
+
+  useEffect(() => {
+    const meta = document.createElement("meta");
+    meta.name = "robots";
+    meta.content = "noindex, nofollow, noarchive";
+    document.head.appendChild(meta);
+    return () => {
+      document.head.removeChild(meta);
+    };
+  }, []);
 
   return (
     <div

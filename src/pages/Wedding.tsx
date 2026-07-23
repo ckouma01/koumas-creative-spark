@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Heart, Camera, Upload, X } from "lucide-react";
 
 const UPLOAD_URL =

@@ -3,7 +3,7 @@ import { Heart, Camera, Upload, X } from "lucide-react";
 import NotFound from "./NotFound";
 
 const UPLOAD_URL =
-  "https://ucy-my.sharepoint.com/:f:/g/personal/ckouma01_ucy_ac_cy/IgDL4dty42UmSp8J0QF-sKFUAedS-Hk-Shy6Dq3EiXfA0aA";
+  "https://ucy-my.sharepoint.com/:f:/g/personal/ckouma01_ucy_ac_cy/IgDL4dty42UmSp8J0QF-sKFUAedS-Hk-Shy6Dq3EiXfA0aA?mobile=1";
 
 // Secret token required to access this page. The QR code must encode
 // koumasweb.com/wedding?k=<ACCESS_TOKEN>. Change here to invalidate old QRs.

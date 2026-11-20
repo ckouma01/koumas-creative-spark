@@ -6,6 +6,8 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
+  // Relative asset paths so the build works on koumasweb.com and on ckouma01.github.io/koumas-creative-spark/
+  base: "./",
   server: {
     host: "::",
     port: 8080,

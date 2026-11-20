@@ -4,6 +4,7 @@ import pantelisImage from "@/assets/pantelis-miamiliotis.png";
 import petLoveStudioLogo from "@/assets/pet-love-studio-logo.png";
 import protoporiaUnicLogo from "@/assets/protoporia-unic-logo.png";
 import cheersBarbershopLogo from "@/assets/cheers-barbershop-logo.png";
+import magnificoLogo from "@/assets/magnifico-logo.png";
 import cpLaserLogo from "@/assets/cp-laser-logo.png";
 import { useScrollAnimation } from "@/hooks/use-scroll-animation";
 
@@ -14,6 +15,13 @@ const testimonials = [
     content: "Από τότε που αποκτήσαμε την ιστοσελίδα μας, το κομμωτήριό μας έχει αυξήσει σημαντικά την πελατεία του. Το σύστημα κρατήσεων λειτουργεί άψογα και οι πελάτες μας βρίσκουν εύκολα τις υπηρεσίες και τις τιμές μας. Εξαιρετική συνεργασία και αποτέλεσμα!",
     rating: 5,
     image: cheersBarbershopLogo
+  },
+  {
+    name: "MAGNIFICO Hair Salon",
+    role: "Κομμωτήριο",
+    content: "Το κουρετήριο μας πλέον έχει την επαγγελματική παρουσία που του αξίζει! Το site είναι κομψό, σύγχρονο και οι πελάτες μας το βρίσκουν εύκολα. Η διαδικτυακή κράτηση ραντεβού μας γλιτώνει τηλέφωνα και χρόνους. Άψογη συνεργασία από την πρώτη κιόλας μέρα!",
+    rating: 5,
+    image: magnificoLogo
   },
   {
     name: "Protoporia UNIC",

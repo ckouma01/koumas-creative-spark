@@ -9,6 +9,13 @@ const projects = [
     tags: ["Booking System", "Barbershop", "Modern Design"],
   },
   {
+    title: "MAGNIFICO Hair Salon",
+    description:
+      "Sleek hair salon website in Nicosia with online booking and a bold, dark aesthetic",
+    url: "https://magnificohairsalon.com",
+    tags: ["Hair Salon", "Online Booking", "Bold Design"],
+  },
+  {
     title: "CP Laser Hair Removal",
     description: "Professional laser hair removal clinic with elegant design",
     url: "https://cplaserhair-removal.com",
@@ -17,7 +24,7 @@ const projects = [
   {
     title: "Protoporia UNIC",
     description: "Modern website for student political movement with news updates and member management",
-    url: "https://protoporiaunic.com",
+    url: "https://ckouma01.github.io/protoporiaunic/",
     tags: ["React", "Modern Design", "Student Organization"],
   },
   {

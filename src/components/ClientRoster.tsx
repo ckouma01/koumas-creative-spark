@@ -4,6 +4,7 @@ import pantelisMiamiliotis from "@/assets/pantelis-miamiliotis.png";
 import petLoveStudioLogo from "@/assets/pet-love-studio-logo.png";
 import cheersBarbershopLogo from "@/assets/cheers-barbershop-logo.png";
 import cpLaserLogo from "@/assets/cp-laser-logo.png";
+import magnificoLogo from "@/assets/magnifico-logo.png.asset.json";
 import { useScrollAnimation } from "@/hooks/use-scroll-animation";
 
 const clients = [
@@ -26,6 +27,11 @@ const clients = [
     name: "Cheers Barbershop",
     logo: cheersBarbershopLogo,
     instagram: "https://www.instagram.com/cheers_barbershop/",
+  },
+  {
+    name: "MAGNIFICO Hair Salon",
+    logo: magnificoLogo.url,
+    instagram: "https://www.instagram.com/magnifico_barber/",
   },
   {
     name: "CP Laser Hair Removal",
@@ -53,7 +59,7 @@ export const ClientRoster = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 lg:grid-cols-5 gap-8 max-w-6xl mx-auto">
+        <div className="grid md:grid-cols-3 lg:grid-cols-6 gap-8 max-w-6xl mx-auto">
           {clients.map((client, index) => (
             <div
               key={index}

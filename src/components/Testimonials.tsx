@@ -4,7 +4,7 @@ import pantelisImage from "@/assets/pantelis-miamiliotis.png";
 import petLoveStudioLogo from "@/assets/pet-love-studio-logo.png";
 import protoporiaUnicLogo from "@/assets/protoporia-unic-logo.png";
 import cheersBarbershopLogo from "@/assets/cheers-barbershop-logo.png";
-import magnificoLogo from "@/assets/magnifico-logo.png";
+import magnificoLogo from "@/assets/magnifico-logo.png.asset.json";
 import cpLaserLogo from "@/assets/cp-laser-logo.png";
 import { useScrollAnimation } from "@/hooks/use-scroll-animation";
 
@@ -21,7 +21,7 @@ const testimonials = [
     role: "Κομμωτήριο",
     content: "Το κουρετήριο μας πλέον έχει την επαγγελματική παρουσία που του αξίζει! Το site είναι κομψό, σύγχρονο και οι πελάτες μας το βρίσκουν εύκολα. Η διαδικτυακή κράτηση ραντεβού μας γλιτώνει τηλέφωνα και χρόνους. Άψογη συνεργασία από την πρώτη κιόλας μέρα!",
     rating: 5,
-    image: magnificoLogo
+    image: magnificoLogo.url
   },
   {
     name: "Protoporia UNIC",
